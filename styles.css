@@ -16,12 +16,15 @@ body{
 }
 
 #header{
+    
     width: 100%;
     height: 100vh;
     background-image: url(images/background.png);
     background-size: cover;
     background-position:center;
+    
 }
+
 
 .container{
     padding: 10px 10%;
@@ -33,6 +36,14 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 10px 10%;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+
 }
 
 .logo{
@@ -81,7 +92,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top:20%;
+    margin-top:30%;
     font-size: 30px;
 }
 
@@ -96,13 +107,13 @@ nav ul li a:hover::after{
 
 /* about */
 #about {
-    padding: 80px 0;
+    padding: 100px 0;
     color: #ababab;
 }
 
 .phrase{
     text-align:center;
-    margin-bottom:40px;
+    margin-bottom:30px;
     margin-top:-40px;
     color: #fff;
     font-size: 30px;
@@ -137,7 +148,7 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 30px;
 }
 
 .tab-links{
@@ -183,7 +194,7 @@ width: 50%;
 
 /* ---------services---------- */
 #services{
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .services-list{
@@ -325,10 +336,13 @@ width: 50%;
     margin-top: 30px;
 }
 
+
 .contac-left p ion-icon{
     color:#ff004f;
     margin-right: 15px;
     font-size:25px;
+  
+   
 }
 
 .social-icons{
