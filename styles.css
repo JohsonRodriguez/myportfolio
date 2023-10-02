@@ -13,16 +13,42 @@ html{
 body{
     background:#080808;
     color: #fff;
+    font-size: 100%;
 }
+
 
 #header{
     
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
     background-size: cover;
     background-position:center;
     
+}
+.men{
+    position: absolute;
+    animation: animateMen 8s ease-in-out infinite;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    width: 90%;
+    height: 107%;
+}
+@keyframes animateColor {
+    0%,100% { transform:translateY(0px)}
+    50% { transform:translateY(50px)}
+}
+@keyframes animateMen {
+    0%,100% { transform:translateX(0px)}
+    50% { transform:translateX(-50px)}
+}
+
+.colors{
+    position: absolute;
+    right: 0;
+    max-width: 600px;
+    margin-right: 90px;
+    margin-top: -20px;
+    animation: animateColor 8s ease-in-out infinite;
 }
 
 
@@ -49,7 +75,7 @@ nav{
 .logo{
     width: 140px;
     color:#fff;
-    font-size: 45px;
+    font-size: 2.8em;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
@@ -63,15 +89,14 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    cursor: pointer;
 }
 
 nav ul li a{
 color:#fff;
 text-decoration: none;
-font-size: 18px;
+font-size: 1.1em;
 position: relative;
-
-
 }
 
 
@@ -86,18 +111,22 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
+
+
 nav ul li a:hover::after{
     width: 100%;
 
 }
 
+
+
 .header-text{
     margin-top:30%;
-    font-size: 30px;
+    font-size: 1.8em;
 }
 
 .header-text h1{
-    font-size:60px;
+    font-size:2.1em;
     margin-top:20px;
 
 }
@@ -116,7 +145,7 @@ nav ul li a:hover::after{
     margin-bottom:30px;
     margin-top:-40px;
     color: #fff;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .row{
@@ -136,9 +165,12 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+.about-col-2 p{
+    font-size: 1em;
+}
 
 .sub-title{
-    font-size: 60px;
+    font-size: 3em;
     font-weight: 600;
     color:#fff;
     margin-bottom: 20px;
@@ -153,7 +185,7 @@ nav ul li a:hover::after{
 
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 500;
     cursor:pointer;
     position: relative;
@@ -181,7 +213,7 @@ width: 50%;
 
 .tab-contents ul li span{
     color:#b54769;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .tab-contents{
@@ -194,7 +226,7 @@ width: 50%;
 
 /* ---------services---------- */
 #services{
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .services-list{
@@ -207,29 +239,21 @@ width: 50%;
 .services-list div{
     background: #262626;
     padding: 40px;
-    font-size:13px;
+    font-size:0.8em;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 
 .services-list div ion-icon{
-    font-size: 50px;
+    font-size: 4em;
     margin-bottom:30px;
 }
 
 .services-list div h2{
-    font-size:30px;
+    font-size:2.4em;
     font-weight: 500;
     margin-bottom:15px;
-}
-
-.services-list div a{
-    text-decoration: none;
-    color:#fff;
-    font-size: 12px;
-    margin-top:20px;
-    display: inline-block;
 }
 
 .services-list div:hover{
@@ -340,7 +364,7 @@ width: 50%;
 .contac-left p ion-icon{
     color:#ff004f;
     margin-right: 15px;
-    font-size:25px;
+    font-size:1.6em;
   
    
 }
@@ -351,7 +375,7 @@ width: 50%;
 
 .social-icons a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2em;
     margin-right: 15px;
     color:#ababab;
     display: inline-block;
@@ -380,13 +404,13 @@ form input, form textarea{
     padding: 15px;
     margin: 15px 0;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.1em;
     border-radius:6px;
 }
 
 form .btn2{
     padding: 14px 60px;
-    font-size: 18px;
+    font-size: 1.1em;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -404,25 +428,64 @@ form .btn2{
     color:#ff004f;
 }
 
+
+/* ------------css for pc medio screens------ */
+@media only screen and (min-width: 1440px){
+    body {
+		font-size:130%;
+	} 
+    .colors{
+        right: 0;
+        max-width: 700px;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+}
+
+
 /* ------------css for samll screens------ */
 nav ion-icon{
     display: none;
+    
 }
 @media only screen and (max-width: 600px){
-    #header{
-            background-image: url(images/phone-background.png);
+    nav ion-icon{
+        display: block;
+        font-size: 25px;
+        
     }
+    
+    .images{
+        display: block;
+        width: 100%;
+        height: 80%;
+        padding-top: 20px;
+        
+    }
+    #switch{
+        display: none;
+    }
+    
+    .men{
+        width: 120%;
+        height: 80%;
+        margin-left: -130px;
+        
+    }
+   
+    .colors{
+         width: 100%;
+         
+    }
+    
     .header-text{
-        margin-top: 160%;
+        margin-top: 220%;
         font-size: 16px;
     }
     .header-text h1{
         font-size: 30px;
     }
-    nav ion-icon{
-        display: block;
-        font-size: 25px;
-    }
+    
 
     nav ul{
         background: #ff004f;
@@ -435,6 +498,11 @@ nav ion-icon{
         z-index: 2;
         transition: right 0.5s;
     }
+    .banner.light nav ul{
+        background: #efe7f8;
+        
+    }
+ 
 
     nav ul li{
         display: block;
@@ -447,6 +515,7 @@ nav ion-icon{
         left:25px;
         cursor: pointer;
     }
+  
 
     .sub-title{
         font-size:40px;
@@ -482,4 +551,89 @@ nav ion-icon{
     color: #61b752;
     margin-top:-40px;
     display: block;
+}
+
+/* -----light version ---------------- */
+body.light{
+    background: #F3F3F4;
+    color: #000;
+}
+.banner.light .logo,
+.banner.light nav ul li a
+{
+    color:#0F0D54;
+}
+
+.banner.light .phrase{
+    color:#FA954A; 
+}
+
+.banner.light .sub-title{
+    color:#02061d;
+}
+
+
+.banner.light .logo span,
+.banner.light .header-text h1 span,
+.banner.light .tab-contents ul li span
+{
+    color:#892EFD;
+}
+.banner.light .tab-titles p{
+    color:#62C38A;
+}
+
+
+.banner.light nav ul li a::after,
+.banner.light .tab-links::after
+{
+    background:#4c0f9c;
+    color: #fff;
+}
+.banner.light form input,
+.banner.light form textarea{
+    background:#fff;
+    color:#0F0D54;
+    border: 2px solid #7d62a0;
+}
+
+.banner.light form input::placeholder,
+.banner.light form textarea::placeholder{
+    color: #c2bdbd;
+}
+
+.banner.light .services-list div{
+    background: #4c0f9c;
+    color: #fff;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.banner.light .services-list div:hover
+{
+    background: #7d39cc;
+}
+.banner.light .contac-left p ion-icon,
+.banner.light .social-icons a:hover{
+    color:#4c0f9c;
+}
+
+.banner.light .social-icons a{
+    color:#7c63a0;
+}
+
+.banner.light  .btn.btn2{
+    background: #4162FF;
+    color: #fff;
+    border: none;
+}
+
+.banner.light .copyright{
+    background:#7c63a0;
+    color: #fff;
+}
+.banner.light .copyright ion-icon{
+    color: #4c0f9c;
+}
+.banner.light #about{
+    color:#0F0D54;
 }

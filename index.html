@@ -7,8 +7,11 @@
     <title>Johson Portfolio Website</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="darkstyle.css">
 </head>
 <body>
+    <section class="banner">
     <div id="header">
         <div class="container">
             <nav>
@@ -20,15 +23,28 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button class="switchDark active" id="switch">
+                         <span><i class='bx bx-sun' ></i></span>
+                         <span><i class='bx bx-moon' ></i></span>
+                         </button>
+                    </li>
                     <ion-icon name="close" onclick="closemenu()"></ion-icon>
                 </ul>
                 <ion-icon name="menu" onclick="openmenu()"></ion-icon>
                 
             </nav>
+            
+            <div class="images">
+                <img src="images/colors.png" class="colors">
+                <img src="images/background.png" class="men">
+            </div>
+            
             <div class="header-text">
                 <p>Web App Developer</p>
                 <h1>Hi, I´m <span id="text"></span></h1>
             </div>
+            
         </div>
     </div>
     <!------about-------------------->
@@ -37,6 +53,7 @@
             <p class="phrase">"Always choose to be gentle"</p>
             <div class="row">
                 <div class="about-col-1">
+                    
                     <img src="images/user.png">
                 </div>
                 <div class="about-col-2">
@@ -92,7 +109,7 @@
                           through finding the right layout and then we’ll work 
                           together as you give content and pictures to help share
                            with others about who you are.</p>
-                          <!-- <a href="#">Learn more</a> -->
+                          
                 </div>
                 <div>
                     <ion-icon name="crop-outline"></ion-icon>
@@ -101,14 +118,14 @@
                         I can help! Whether you need a e-commerce web application, 
                         custom web tailored to the needs of your company, or a custom
                          built site, contact me today to see how can help you find solutions.</p>
-                          <!-- <a href="#">Learn more</a> -->
+                          
                 </div>
                 <div>
                     <ion-icon name="logo-android"></ion-icon>
                     <h2>Andriod Apps</h2>
                     <p>Do you need a app?. I design, build and enhance custom android applications, 
                         by helping you leverage technology to improve your business.</p>
-                          <!-- <a href="#">Learn more</a> -->
+                          
                 </div>
             </div>
         </div>
@@ -184,6 +201,8 @@
             <p>From Peru with <ion-icon name="heart"></ion-icon> for the world  </p>
         </div>
     </div>
+</section>
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
