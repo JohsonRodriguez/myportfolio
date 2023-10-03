@@ -16,45 +16,9 @@ body{
     font-size: 100%;
 }
 
-
 #header{
-    
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position:center;
-    
-}
-.men{
-    position: absolute;
-    animation: animateMen 8s ease-in-out infinite;
-    margin-top: -50px;
-    margin-bottom: -50px;
-    width: 90%;
-    height: 107%;
-}
-@keyframes animateColor {
-    0%,100% { transform:translateY(0px)}
-    50% { transform:translateY(50px)}
-}
-@keyframes animateMen {
-    0%,100% { transform:translateX(0px)}
-    50% { transform:translateX(-50px)}
-}
-
-.colors{
-    position: absolute;
-    right: 0;
-    max-width: 600px;
-    margin-right: 90px;
-    margin-top: -20px;
-    animation: animateColor 8s ease-in-out infinite;
-}
-
-
-.container{
-    padding: 10px 10%;
-
 }
 
 nav{
@@ -118,11 +82,64 @@ nav ul li a:hover::after{
 
 }
 
+.container{
+    padding: 10px 10%;
+
+}
+
+.home{
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    
+}
+.images{
+    flex-basis: 60%;
+}
+.men{
+    padding-top: 20px;
+    position: absolute;
+    right: 5px;
+    animation: animateMen 8s ease-in-out infinite;
+    width: 50%;
+    height: 100%;
+    margin-right: 90px;
+    
+}
+.colors{
+    position: absolute;
+    right: 0;
+    max-width: 600px;
+    margin-right: 90px;
+    margin-top: -20px;
+    animation: animateColor 8s ease-in-out infinite;
+    z-index: -1;
+}
+
+.men2{
+    display: none;
+}
+@keyframes animateColor {
+    0%,100% { transform:translateY(0px)}
+    50% { transform:translateY(50px)}
+}
+@keyframes animateMen {
+    0%,100% { transform:translateX(0px)}
+    50% { transform:translateX(-50px)}
+}
 
 
 .header-text{
-    margin-top:30%;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 150px;
+    flex-basis: 30%;
     font-size: 1.8em;
+    left: 5px;
 }
 
 .header-text h1{
@@ -442,6 +459,99 @@ form .btn2{
     }
 }
 
+@media only screen and (max-width: 1200px){
+    .men{
+        width: 40%;
+        height: 90%;
+    }
+    /* .colors{
+        
+        max-width: 600px;
+        margin-right: 90px;
+        margin-top: -20px;
+       
+    } */
+    .header-text{
+        margin-top: 20%;
+        font-size: 36px;
+    }
+    .header-text h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 1020px){
+    #header{
+        
+        height: 80vh;
+    }
+    .men{
+        
+        
+        width: 40%;
+        height: 80%;
+    }
+    .colors{
+        
+        max-width: 400px;
+        margin-right: 90px;
+        margin-top: -20px;
+       
+    }
+    .header-text{
+        margin-top: 20%;
+        font-size: 26px;
+    }
+    .header-text h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 940px){
+    #header{
+        
+        height: 70vh;
+    }
+    .men{
+        margin-top: 20px;
+        
+        width: 30%;
+        height: 70%;
+    }
+   
+    .header-text{
+        margin-top: 25%;
+        font-size: 22px;
+    }
+    .header-text h1{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 760px){
+    #header{
+        
+        height: 80vh;
+    }
+    .men{
+        margin-top: 60px;
+        
+        width: 35%;
+        height: 70%;
+    }
+    .colors{
+        margin-top: 60px;
+        max-width: 300px;
+       
+       
+    }
+   
+    .header-text{
+        margin-top: 45%;
+        font-size: 20px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+}
 
 /* ------------css for samll screens------ */
 nav ion-icon{
@@ -453,34 +563,39 @@ nav ion-icon{
         display: block;
         font-size: 25px;
         
-    }
-    
-    .images{
-        display: block;
-        width: 100%;
-        height: 80%;
-        padding-top: 20px;
         
     }
-    #switch{
-        display: none;
-    }
-    
+ 
     .men{
-        width: 120%;
+        display: block;
+        position: absolute;
+       margin-right: -80px;
+       width: 70%;
+        animation: animateMen 0s ;
+    }
+    .men2{
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 60%;
         height: 80%;
-        margin-left: -130px;
         
     }
    
     .colors{
          width: 100%;
+         margin-right: -50px;
+         
+         
          
     }
     
     .header-text{
-        margin-top: 220%;
+        position: absolute;
+        margin-top: 115%;
         font-size: 16px;
+        margin-left: -1px;
+        padding-left: 10px;
     }
     .header-text h1{
         font-size: 30px;
