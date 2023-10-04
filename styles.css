@@ -562,7 +562,7 @@ nav ion-icon{
     nav ion-icon{
         display: block;
         font-size: 25px;
-        margin-right: 30px;
+        margin-right: 40px;
         
         
     }
@@ -570,7 +570,7 @@ nav ion-icon{
     .men{
         display: block;
         position: absolute;
-       margin-right: -5px;
+       margin-right: -25px;
        width: 70%;
         animation: animateMen 0s ;
     }
