@@ -1,0 +1,31 @@
+{
+    "home":{
+        "menu1":"Inicio",
+        "menu2":"Acerca",
+        "menu3":"Servicios",
+        "menu4":"Portafolio",
+        "menu5":"Contacto",
+        "title":"Desarrollador Web"
+        
+    },"about":{
+        "phrase":"Elige siempre ser amable",
+        "title":"Acerca de mí",
+        "description":"Hola, me llamo Johson, soy un desarrollador de aplicaciones web apasionado por crear webs hermosas y funcionales. Mis habilidades más vitales son HTML, CSS, JavaScript y Java. Estoy constantemente ampliando mis conocimientos con nuevas tecnologías y herramientas. Me siento cómodo trabajando con frameworks como Angular y Spring Web.",
+        "sub-title-1":"Habilidades",
+        "sub-title-2":"Experiencia",
+        "sub-title-3":"Educación"
+        },"services":{
+            "title":"Mis Servicios",
+            "sub-title-1":"Diseño Web",
+            "description-1":"Déjeme ayudarle a contar su historia a través del diseño web. Lo que usted está buscando en su sitio web. ¿Cómo quieres que sea?, te guiaré para encontrar el diseño adecuado y luego trabajaremos juntos mientras me das contenido e imágenes para ayudar a compartir con los demás quién eres",
+            "sub-title-2":"Apliaciónes Web",
+            "description-2":"¿Quieres una aplicación web que se adapte a tus necesidades como empresa? Yo puedo ayudarle. Si usted necesita una aplicación web de comercio electrónico, web personalizada adaptada a su empresa, o un sitio construido a medida, póngase en contacto conmigo hoy para ver cómo puede ayudarle a encontrar soluciones",
+            "sub-title-3":"Apliaciones Android",
+            "description-3":"¿Necesitas una aplicación? Diseño, construyo y mejoro aplicaciones android a medida, ayudándote a aprovechar la tecnología para mejorar tu negocio."
+            },"contact":{
+                "title":"Contáctame",
+                "title2":"Descarga CV",
+                "title3":"Enviar",
+                "footer":"Del Perú con <ion-icon name='heart'></ion-icon> para el mundo"
+            }
+}

@@ -1,141 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johson Portfolio Website</title>
+    <link rel = "icon" href =  "images/logo.png" type = "image/x-icon"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="darkstyle.css">
+    
 </head>
+
 <body>
     <section class="banner">
-    <div id="header">
-        <div class="container">
-            <nav>
-                <p class="logo"><span>J</span>ohner.</p>
-                
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <button class="switchDark active" id="switch">
-                         <span><i class='bx bx-sun' ></i></span>
-                         <span><i class='bx bx-moon' ></i></span>
-                         </button>
-                    </li>
-                    <ion-icon name="close" onclick="closemenu()"></ion-icon>
-                </ul>
-                <ion-icon name="menu" onclick="openmenu()"></ion-icon>
-                
-            </nav>
- 
-        </div>
-        <div class="home">
-            <div class="images">
-                
-                <img src="images/background.png" class="men">
-                <img src="images/colors.png" class="colors">
-                <img src="images/phone-background.png" class="men2">
-            </div>
-            
-            <div class="header-text">
-                <p>Web App Developer</p>
-                <h1>Hi, I´m <span id="text"></span></h1>
-            </div>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <p class="logo"><span>J</span>ohner<span>.</span>dev</p>
 
-        </div>
-    </div>
-    <!------about-------------------->
-    <div id="about">
-        <div class="container">
-            <p class="phrase">"Always choose to be gentle"</p>
-            <div class="row">
-                <div class="about-col-1">
+                    <ul id="sidemenu">
+                        <li><a href="#header" data-section="home" data-value="menu1">Home</a></li>
+                        <li><a href="#about" data-section="home" data-value="menu2">About</a></li>
+                        <li><a href="#services" data-section="home" data-value="menu3">Services</a></li>
+                        <li><a href="#portfolio" data-section="home" data-value="menu4">Portfolio</a></li>
+                        <li><a href="#contact" data-section="home" data-value="menu5">Contact</a></li>
+                        <li>
+                            <button class="switchDark active" id="switch">
+                                <span><i class='bx bx-sun'></i></span>
+                                <span><i class='bx bx-moon'></i></span>
+                            </button>
+                        </li>                      
+                        <ion-icon name="close" onclick="closemenu()"></ion-icon>
+                    </ul>
                     
-                    <img src="images/user.png">
+                    <ion-icon name="menu" onclick="openmenu()"></ion-icon>
+
+                </nav>
+
+            </div>
+            <div class="home">
+                <div class="images">
+
+                    <img src="images/background.png" class="men">
+                    <img src="images/colors.png" class="colors">
+                    <img src="images/phone-background.png" class="men2">
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hi there, my name is Johson, I'm a web app developer passionate about creating beautiful and functional webs. My most vital skills are
-                        HTML, CSS, JavaScript and Java. I'm constantly expanding my knowledge with new technologies and tools. I'm comfortable working with frameworks like Angular and Spring Web.
+
+                <div class="header-text">
+                    <p data-section="home" data-value="title">Web App Developer</p>
+                    <h1>Hi, I´m <span id="text"></span></h1>
+                </div>
+
+            </div>
+        </div>
+        <!------about-------------------->
+        <div id="about">
+            <div class="container">
+                <p class="phrase" data-section="about" data-value="phrase">"Always choose to be gentle"</p>
+                <div class="row">
+                    <div class="about-col-1">
+
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title" data-section="about" data-value="title">About Me</h1>
+                        <p data-section="about" data-value="description">Hi there, my name is Johson, I'm a web app developer passionate about creating beautiful and
+                            functional webs. My most vital skills are
+                            HTML, CSS, JavaScript and Java. I'm constantly expanding my knowledge with new technologies
+                            and tools. I'm comfortable working with frameworks like Angular and Spring Web.
                         </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link"  onClick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onClick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onClick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            
-                            <li><span>Backend</span><br>- Java<br>- Spring Boot</li>
-                            <li><span>Frontend</span><br>- Angular,<br>- Html, Css, JavaScript</li>
-                            <li><span>Database</span><br>- PostgreSQL,<br>- Mysql<br>- SQL Server</li>
-                            <li><span>Others</span><br>-Android Studio, Git, Scrum</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2021 - Current</span><br>Web and app Developer in Lord Byron School</li>
-                            <!-- <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" data-section="about" data-value="sub-title-1" onClick="opentab('skills')">Skills</p>
+                            <p class="tab-links" data-section="about" data-value="sub-title-2" onClick="opentab('experience')">Experience</p>
+                            <p class="tab-links" data-section="about" data-value="sub-title-3" onClick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+
+                                <li><span>Backend</span><br>- Java<br>- Spring Boot</li>
+                                <li><span>Frontend</span><br>- Angular,<br>- Html, Css, JavaScript</li>
+                                <li><span>Database</span><br>- PostgreSQL,<br>- Mysql<br>- SQL Server</li>
+                                <li><span>Others</span><br>-Android Studio, Git, Scrum</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Web and app Developer in Lord Byron School</li>
+                                <!-- <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
                             <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd</li>
                             <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li> -->
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022</span><br>Computer Science at UTP - Lima</li>
-                            <li><span>2020</span><br>Systems Development at IDAT - Lima</li>
-                            <li><span>2015</span><br>English Language at BRITANICO - Lima</li>
-                        </ul>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>Computer Science at UTP - Lima</li>
+                                <li><span>2020</span><br>Systems Development at IDAT - Lima</li>
+                                <li><span>2015</span><br>English Language at BRITANICO - Lima</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- -------------services------------ -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                    <h2>Web Design</h2>
-                    <p>Let me help you tell your story through web design. 
-                        What you are looking for in your website. What do you want
-                         it to look like?, I’ll walk you 
-                          through finding the right layout and then we’ll work 
-                          together as you give content and pictures to help share
-                           with others about who you are.</p>
-                          
-                </div>
-                <div>
-                    <ion-icon name="crop-outline"></ion-icon>
-                    <h2>Web App</h2>
-                    <p>Do you want web app that quite fit your needs as a business? 
-                        I can help! Whether you need a e-commerce web application, 
-                        custom web tailored to the needs of your company, or a custom
-                         built site, contact me today to see how can help you find solutions.</p>
-                          
-                </div>
-                <div>
-                    <ion-icon name="logo-android"></ion-icon>
-                    <h2>Andriod Apps</h2>
-                    <p>Do you need a app?. I design, build and enhance custom android applications, 
-                        by helping you leverage technology to improve your business.</p>
-                          
+        <!-- -------------services------------ -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title" data-section="services" data-value="title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <h2 data-section="services" data-value="sub-title-1">Web Design</h2>
+                        <p data-section="services" data-value="description-1">Let me help you tell your story through web design.
+                            What you are looking for in your website. What do you want
+                            it to look like?, I’ll walk you
+                            through finding the right layout and then we’ll work
+                            together as you give content and pictures to help share
+                            with others about who you are.</p>
+                    </div>
+                    <div>
+                        <ion-icon name="crop-outline"></ion-icon>
+                        <h2 data-section="services" data-value="sub-title-2">Web App</h2>
+                        <p data-section="services" data-value="description-2">Do you want web app that quite fit your needs as a business?
+                            I can help! Whether you need a e-commerce web application,
+                            custom web tailored to the needs of your company, or a custom
+                            built site, contact me today to see how can help you find solutions.</p>
+
+                    </div>
+                    <div>
+                        <ion-icon name="logo-android"></ion-icon>
+                        <h2 data-section="services" data-value="sub-title-3">Andriod Apps</h2>
+                        <p data-section="services" data-value="description-3">Do you need a app?. I design, build and enhance custom android applications,
+                            by helping you leverage technology to improve your business.</p>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- -----------------portfolio------------ -->
-    <!-- <div id="portfolio">
+        <!-- -----------------portfolio------------ -->
+        <!-- <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
@@ -173,102 +179,69 @@
             <a href="#" class="btn">See more</a>
         </div>
     </div> -->
-    <!-- ---------------------contact----------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contac-left">
-                    <div class="sub-title">Contact Me</div>
-                    <p><ion-icon name="mail"></ion-icon> johner.dev@gmail.com</p>
-                    <p><ion-icon name="call"></ion-icon>+19108133673</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/johsonrodriguez"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="https://github.com/JohsonRodriguez"><ion-icon name="logo-github"></ion-icon></a>
-                        <a href="https://twitter.com/JohsonRodriguez"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="https://www.instagram.com/johsonrodriguez/"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="https://wa.me/19108133673?text=I'm%20interested%20work%20with%20you"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <!-- ---------------------contact----------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contac-left">
+                        <div class="sub-title"  data-section="contact" data-value="title">Contact Me</div>
+                        <p><ion-icon name="mail"></ion-icon> johner.dev@gmail.com</p>
+                        <p><ion-icon name="call"></ion-icon>+19108133673</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/johsonrodriguez"><ion-icon
+                                    name="logo-linkedin"></ion-icon></a>
+                            <a href="https://github.com/JohsonRodriguez"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://twitter.com/JohsonRodriguez"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="https://www.instagram.com/johsonrodriguez/"><ion-icon
+                                    name="logo-instagram"></ion-icon></a>
+                            <a href="https://wa.me/19108133673?text=I'm%20interested%20work%20with%20you"><ion-icon
+                                    name="logo-whatsapp"></ion-icon></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download target="_blank" class="btn btn2" data-section="contact" data-value="title2" >Download CV</a>
                     </div>
-                    <a href="images/my-cv.pdf" download target="_blank" class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="your name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2" data-section="contact" data-value="title3">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
                 </div>
             </div>
+            <div class="copyright">
+                <div id="flags" class="flags">
+                    <div class="flags_item"data-language="en">
+                        <p>EN</p>
+                        <img  class="circular--square" src="images/us.svg" alt="">
+                    </div>
+                    <div class="flags_item"data-language="es">
+                        <p>ES</p>
+                        <img class="circular--square" src="images/pe.svg" alt="">
+                    </div>
+                </div>
+                <p data-section="contact" data-value="footer">From Peru with <ion-icon name="heart"></ion-icon> for the world </p>
+            </div>
         </div>
-        <div class="copyright">
-            <p>From Peru with <ion-icon name="heart"></ion-icon> for the world  </p>
-        </div>
-    </div>
-</section>
+    </section>
+    <!-- --------Scripts-------------------------------- -->
     <script src="script.js"></script>
+    <script src="language.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- --------text animate---- -->
 <script>
     let typingText = new Typed("#text",{
-        strings:["Johson","Coder","Developer"],
-        loop: true,
-        typeSpeed:180,
-        backSpeed:50,
-        backDelay:1000,
-    });
-</script>
-    
-    <script>
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+            strings:["Johson","Coder","Developer"],
+            loop: true,
+            typeSpeed:180,
+            backSpeed:50,
+            backDelay:1000,
+        });
     </script>
-    <script>
-        var sdemenu=document.getElementById("sidemenu");
-        function openmenu(){
-            sdemenu.style.right="0";
-        }
-        function closemenu(){
-            sdemenu.style.right="-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxzuYA4ReGeFpvBiA7VLhRvb-HwQ6kQsaqdrlMUFmJ5gEl3Xmx3Uy18VIPrfoVg-1Ui/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                
-                msg.innerHTML="Message sent successfully"
-                setTimeout(function() {
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-            })
-
-            .catch(error => {
-                msg.style.color="red"
-                msg.innerHTML="Error in your message"
-                setTimeout(function() {
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-            })
-        })
-      </script>
+    <!-- --------Scripts-------------------------------- -->
 </body>
+
 </html>

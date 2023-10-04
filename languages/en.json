@@ -1,0 +1,34 @@
+{
+    "home":{
+        "menu1":"Home",
+        "menu2":"About",
+        "menu3":"Services",
+        "menu4":"Portfolio",
+        "menu5":"Contact",
+        "title":"Web App Developer"
+        
+    },"about":{
+        "phrase":"Always choose to be gentle",
+        "title":"About Me",
+        "description":"Hi there, my name is Johson, I'm a web app developer passionate about creating beautiful and functional webs. My most vital skills are HTML, CSS, JavaScript and Java. I'm constantly expanding my knowledge with new technologies and tools. I'm comfortable working with frameworks like Angular and Spring Web.",
+        "sub-title-1":"Skills",
+        "sub-title-2":"Experience",
+        "sub-title-3":"Education"
+    },"services":{
+        "title":"My Services",
+        "sub-title-1":"Web Design",
+        "description-1":"Let me help you tell your story through web design. What you are looking for in your website. What do you want it to look like?, I’ll walk you through finding the right layout and then we’ll work together as you give content and pictures to help share         with others about who you are.",
+        "sub-title-2":"Web App",
+        "description-2":"Do you want web app that quite fit your needs as a business? I can help! Whether you need a e-commerce web application,custom web tailored to the needs of your company, or a custom built site, contact me today to see how can help you find solutions.",
+        "sub-title-3":"Andriod Apps",
+        "description-3":"Do you need a app?. I design, build and enhance custom android applications, by helping you leverage technology to improve your business."
+    },"contact":{
+        "title":"Contact Me",
+        "title2":"Download CV",
+        "title3":"Submit",
+        "footer":"From Peru with <ion-icon name='heart'></ion-icon> for the world"
+        
+
+    }
+    
+}

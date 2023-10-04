@@ -39,7 +39,7 @@ nav{
 .logo{
     width: 140px;
     color:#fff;
-    font-size: 2.8em;
+    font-size: 2.2em;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
@@ -379,6 +379,7 @@ width: 50%;
 
 
 .contac-left p ion-icon{
+    margin-bottom: -6px;
     color:#ff004f;
     margin-right: 15px;
     font-size:1.6em;
@@ -431,14 +432,53 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+.flags{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    /* margin-top: -10px; */
+    
+    
+}
+.flags_item{
+    width: 60px;
+    height: 30px;
+    padding:5px;
+    align-items: center;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+
+}
+
+.flags_item p{
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.flags_item img{
+    width: 30px;
+    height: 20px;
+    display:block;
+    /* cursor: pointer; */
+    
+}
+.circular--square {
+    border-radius: 50%;
+  }
 
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 15px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .copyright ion-icon{
